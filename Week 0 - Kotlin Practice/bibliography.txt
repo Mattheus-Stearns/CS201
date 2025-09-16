@@ -1,0 +1,1 @@
+Galata, I., Braun, M. and Suica, M. (2021) Data Structures & algorithms in Kotlin: Implementing Practical Data Structures in Kotlin. McGaheysville, VA: Razeware, LLC. 

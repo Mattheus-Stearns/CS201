@@ -1,0 +1,44 @@
+The Kotlin List is known as a generic collection because it can work with any type
+As with any data structure, there are certain notable traits that you should be aware of:
+
+val places = listOf("Paris", "London", "Bucharest")
+
+Order - elements of a list are explicitly ordered. using the places list as an example (^^^), Paris appears before London. All of the elements in a list have a corresponding, zero-based, integer index. For example, plases (^^^) has three indices, one corresponding to each element, starting with 0. The order should not be taken for granted, as some structures like Map have a weaker concept of the order or no order at all. 
+
+Random access - a trait that data structures can claim if they can handle element retrieval in a constant amount of time. For example, getting "London" from places takes constant time. This means that there is no performance difference between accessing the first element or the third. This performance should not be taken for granted, as Linked Lists and Trees do not have constant time access.
+
+List performance ––– Aside from being a random-access collection, there are other areas of importance in regards to performance. For lists, this varies on two factors:
+
+Insertion location (you choose to insert a new element in the list):
+	- most efficient scenario for adding an element is appending it at the end of the list, this is a constant-time operation
+	- then there is inserting an element in the, or god forbid, at the beginning of, the list, which is an O(n)-time operation
+	- if inserting elements in front of a collection is a common operation for your program, you may want to consider a different data structure to hold your data
+
+Capacity:
+	- if you try to add new elements to a list that is already at the maximum capacity for the predetermined space for its elements, the List will have to restructure itself to make more room for more elements
+	- This is done by accessing and copying all of the current elements of the list into a new and larger container, which means that any insertion, even at the end, could take n steps to complete if a copy is made
+	- The Standard Library employs a strategy to minimize this amount of copying that is required to occur by doubling the capacity of the list every time it needs to copy
+
+A Map is another generic collection that holds key-value pairs. There is no restriction on what type of object the key is, but Map uses hashCode() to store the data. Usually, the key is one of the Standard Library types which have hashCode() implemented. If you want to use your own type, you need to implement the function yourself. It's not difficult to override hashCode(), you just have to investigate what are the most common strategies to get the best result out of the Map.
+
+Maps are unordered, because maps put data into different buckets depending on the result that the hashCode() returns. The data in each bucket is ordered, but the general order of the data in the map is unpredictable.
+
+It is possible to traverse through the key-value pairs of a map multiple times. 
+
+The lack of explicit ordering disadvantage comes with some redeeming traits:
+	- Unlike the list, maps don't need to worry about elements shifting around, thus inserting elements into a map always takes a constant amount of time.
+	-Lookup operations also take a constant amount of time, which is significantly faster than finding a particular element in a list which requires a walk from the beginning of the list to the insertion point. 
+
+Mutable vs. Read Only
+
+There is a distinction between mutable and read-only structures in Kotlin. When one refers the concept of a list in Kotlin, its usually referring to Kotlin's MutableList. Unlike List, MutableList also has functions for adding and removing elements. Kotlin doesn't allow for a list to be changed in any way. To change a data structure, you must express this intent by using the Mutable version of that data structure. Those data structures have functions for adding and removing elements. So why would you ever use the read-only version?
+
+For safety.
+
+Whenever you need to pass your data structure as a parameter, and you want to be sure that the function doesn't produce a side effect, you should use a read-only collection as the parameter. 
+
+Key points:
+	- Every data structure has advantages and disadvantages. Knowing them is the key to writing performant software.
+	- Functions such as add(Int, Any) for List have perfomance characteristics that can cripple performance when used haphazardly. If you find yourself needing to use add(Int, Any) frequently with indices near the beginning of the List, you may want to consider using a different data stucture such as the Linked List.
+	- Map trades the ability to maintain the order of its elements for fast insertion and searching.
+	- Kotlin encourages you to use read-only variants of collections whenever possible.

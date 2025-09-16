@@ -1,0 +1,7 @@
+What does 'target object' mean? (p.g. 40)
+As in, how are run and let different functions? (p.g. 40)
+If we want to keep our structures read-only for safety, then would it be best practice for all of the structures to be read-only while they are in storage, and then making them mutable specifically when we want to modify them? (p.g. 46)
+Would you recommend following the classes up with study from the textbook? If so, what exercises should I do each week of this course?
+
+
+Source: bibliography.txt
