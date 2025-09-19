@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire/surefirebooter-20250918205102785_3.jar /Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire 2025-09-18T20-51-02_748-jvmRun1 surefire-20250918205102785_1tmp surefire_0-20250918205102785_2tmp"/>
+    <property name="sun.java.command" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire/surefirebooter-20250918221503504_3.jar /Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire 2025-09-18T22-15-03_469-jvmRun1 surefire-20250918221503504_1tmp surefire_0-20250918221503504_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/test-classes:/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/classes:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-test/2.0.21/kotlin-test-2.0.21.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-test-junit/2.0.21/kotlin-test-junit-2.0.21.jar:/Users/mattheuspieterstearns/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mattheuspieterstearns/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire/surefirebooter-20250918205102785_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/lunar_lander/target/surefire/surefirebooter-20250918221503504_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.8"/>
@@ -60,8 +60,8 @@
   </properties>
   <testcase name="testBurn1" classname="LanderTest" time="0.008"/>
   <testcase name="testBurn2" classname="LanderTest" time="0.0"/>
-  <testcase name="testBurn3" classname="LanderTest" time="0.001"/>
-  <testcase name="testBurn4" classname="LanderTest" time="0.0"/>
+  <testcase name="testBurn3" classname="LanderTest" time="0.0"/>
+  <testcase name="testBurn4" classname="LanderTest" time="0.001"/>
   <testcase name="testInitialization" classname="LanderTest" time="0.0"/>
   <testcase name="testStatus" classname="LanderTest" time="0.0"/>
 </testsuite>
