@@ -1,0 +1,104 @@
+=========================
+
+     Log     Message
+
+=========================
+
+Initial Altitude: 1000
+Initial Velocity: 40
+Initial Fuel: 25
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 40
+Resultant Velocity after gravity's effect: 42
+Resultant Altitude: 958
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 42
+Resultant Velocity after gravity's effect: 44
+Resultant Altitude: 914
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 44
+Resultant Velocity after gravity's effect: 46
+Resultant Altitude: 868
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 46
+Resultant Velocity after gravity's effect: 48
+Resultant Altitude: 820
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 48
+Resultant Velocity after gravity's effect: 50
+Resultant Altitude: 770
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 50
+Resultant Velocity after gravity's effect: 52
+Resultant Altitude: 718
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 52
+Resultant Velocity after gravity's effect: 54
+Resultant Altitude: 664
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 54
+Resultant Velocity after gravity's effect: 56
+Resultant Altitude: 608
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 56
+Resultant Velocity after gravity's effect: 58
+Resultant Altitude: 550
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 58
+Resultant Velocity after gravity's effect: 60
+Resultant Altitude: 490
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 60
+Resultant Velocity after gravity's effect: 62
+Resultant Altitude: 428
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 62
+Resultant Velocity after gravity's effect: 64
+Resultant Altitude: 364
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 64
+Resultant Velocity after gravity's effect: 66
+Resultant Altitude: 298
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 66
+Resultant Velocity after gravity's effect: 68
+Resultant Altitude: 230
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 68
+Resultant Velocity after gravity's effect: 70
+Resultant Altitude: 160
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 70
+Resultant Velocity after gravity's effect: 72
+Resultant Altitude: 88
+Requested Fuel Burn: 0
+Resultant Fuel: 25
+Resultant Velocity after Fuel burn: 72
+Resultant Velocity after gravity's effect: 74
+Resultant Altitude: 14
+Requested Fuel Burn: 16
+Resultant Fuel: 9
+Resultant Velocity after Fuel burn: 10
+Resultant Velocity after gravity's effect: 12
+Resultant Altitude: 2
+Requested Fuel Burn: 3
+Resultant Fuel: 6
+Resultant Velocity after Fuel burn: 0
+Resultant Velocity after gravity's effect: 2
+Resultant Altitude: 0
