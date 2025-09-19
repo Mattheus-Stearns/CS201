@@ -90,6 +90,8 @@ fun main() {
     println("Welcome to Lunar Lander!™\n")
     // Establishing number of players
     println("How many players wish to play? (1 | 2)")
+
+    // TODO: Think about this in more detail
     val gameType: Int = readln().toInt()
     
     if (!(gameType == 1 || gameType == 2)) {
