@@ -91,8 +91,7 @@ fun main() {
     // Establishing number of players
     println("How many players wish to play? (1 | 2)")
 
-    // TODO: Think about this in more detail
-    val gameType: Int = readln().toInt()
+    val gameType: Int = readln().toIntOrNull() ?: 1
     
     if (!(gameType == 1 || gameType == 2)) {
         return
@@ -102,7 +101,6 @@ fun main() {
     val player1 = LunarLander()
     // Initializes a player2 object regardless of need (to temporarily avoid the code fritzing out)
     val player2 = LunarLander()
-
 
     var userInput: Int
 
@@ -115,7 +113,7 @@ fun main() {
             println("   How much fuel do you wish to burn this round? ")
             print("   ")
 
-            userInput = readln().toInt()
+            userInput = readln().toIntOrNull() ?: -1
             if (userInput == -1) break@game
             
             player1.burn(userInput)
@@ -130,7 +128,7 @@ fun main() {
             println("   How much fuel do you wish to burn this round? ")
             print("   ")
 
-            userInput = readln().toInt()
+            userInput = readln().toIntOrNull() ?: -1
             if (userInput == -1) break@game
             
             player1.burn(userInput)
@@ -141,7 +139,7 @@ fun main() {
             println("   How much fuel do you wish to burn this round? ")
             print("   ")
             
-            userInput = readln().toInt()
+            userInput = readln().toIntOrNull() ?: -1
             if (userInput == -1) break@game
             
             player2.burn(userInput)
@@ -179,3 +177,6 @@ fun main() {
 // intend to do. 
 // As of writing this reflection I spent 8 hours on this assigment, but I need to optimize some parts to satisfy
 // expectation #8.
+// I feel like my code is relitively well implemented... I decided on further inspection that I would not optimize
+// my code without feedback from Anya, however I changed my user input functions that would throw errors if the user
+// input anything but ints, and instead used what is seen on lines 116 131 and 141, as well as line 94
