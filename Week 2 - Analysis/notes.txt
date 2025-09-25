@@ -1,0 +1,25 @@
+
+Three laws of recursion:
+
+	- A recursive algorithm must have a base case.
+	- A recursive algorithm must change its state and move toward the base case.
+	- A recursive algorithm must call itself recursively.
+
+Converting an Integer to a String in Any Base
+
+def to_str(n, base):
+    convert_string = "0123456789ABCDEF"
+    if n < base:
+        return convert_string[n]
+    else:
+        return to_str(n // base, base) + convert_string[n % base]
+
+print(to_str(1453, 16))
+
+Write a function that takes a string as a parameter and returns a new string that is the reverse of the old string.
+
+def reverse(s):
+    if len(s) <= 1:
+        return s
+    else:
+        return reverse(s[1:]) + s[0]
