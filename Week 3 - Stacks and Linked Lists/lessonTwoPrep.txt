@@ -1,0 +1,52 @@
+ | “Teddy” |
+ |  “Sam”  |
+ | “Janine”|
+ -----------
+
+stack.peek() => returns "Teddy"
+
+ | “Teddy” |
+ |  “Sam”  |
+ | “Janine”|
+ -----------
+
+stack.pop() => returns "Teddy"
+
+ |  “Sam”  |
+ | “Janine”|
+ -----------
+
+stack.push(“Allison”) => returns nothing
+
+ |“Allison”|
+ |  “Sam”  |
+ | “Janine”|
+ -----------
+
+
+/** An example kotlin implementation
+ * 
+ * 	fun symbol_checker(symbol_string: String){
+ * 		s = Stack()
+ * 		for (symbol in symbol_string) {
+ * 			if (symbol in "([{") {
+ *				s.push(symbol)
+ *			} else {
+ *				if (s.is_empty()) {
+ * 					return False
+ *				} else {
+ *					if (not matches(s.pop(), symbol)) {
+ *						return False
+ *					}
+ *				}
+ *			}
+ *		}
+ *		return s.is_empty()
+ * 	}
+ *
+ *	fun matches(sym_left: String, sym_right: String){
+ *		all_lefts = "([{"
+ *		all_rights = ")]}"
+ *		return all_lefts.index(sym_left) == all_rights.index(sym_right)
+ *	}
+ */

@@ -1,0 +1,17 @@
+"Turn 			"Straight		"Turn right		"Great Hall
+right on	->	for 2		->	on College	->	will be on	-> 	Null
+1st St E"		blocks"			St"			your left"
+	Head
+
+I think that the Big-O time complexity of insertAtEnd() is O(n) because we have to traverse the whole linked list, one item at a time, to get to the end node.
+
+If the first node is deleted:
+
+"Straight		"Turn right		"Great Hall
+for 2		->	on College	->	will be on	-> 	Null
+blocks"			St"			your left"
+	Head
+
+I think that the Big-O time complexity of removeFirstNode() is O(1) because regardless of the length of the linked list, the first node will always be pointed to by the Head, and it doesn't matter how long the linked list is when pointing the head to the second node of the linked list.
+
+The similarities are that at the end of the day both a linked list and a mutable list are data types, as well as collections, so data is stored in them and they are ordered collections. That said, that's when the similarities end because in memory a mutable list has to reserve a block of data for the list to be initialized, and it can't be spread across open sectors because it needs enough space to fit the whole mutable list so it can cause trouble. However, with a linked list an individual element with its data and the position of the next node can be put into a sector, so there is a lot more freedom in assignments of linked lists and this can save memory misallocation or memory related errors. But, we have gotten off track. In the mutable list implementation there are easily designed functions so it is very easy for the code to be implemented, but with the linked list the implementation requires a lot more code. Yet, its more intuitive for linked lists to be representative of stacks since the head naturally performs the role of the top of the stack, and to get to the element at the bottom of the stack you would have to iterate through the whole list anyway, so instead when adding new elements they are added at the head and all of the data is copied one next pointer over. 
