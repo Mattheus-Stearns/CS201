@@ -1,0 +1,19 @@
+Which double-ended queue operation and Singly-Linked List operation perform the same task as the Queue enqueue() operation?
+
+For the double ended queue operation insertFront() or insertRear() perform the same task as the enqueue() operation, and the difference between the two is only in the detail and choice that the coder puts in how they set up the queue enqueue() operation, and if they take front or rear as to be where they initially index into by. As for the Singly Linked list operation, it would be insertAtEnd() or insertAtBeginnig(), also depending on how the coder implements enqueue().
+
+What is the Big-O time complexity of the Queue enqueue() operation? Of its analogous Double-Ended Queue and Singly-Linked List operations?
+
+The big-o time complexity of the queue enqueue() operation is O(n) due to "items.size" which necessitates enumerating over the list for every single element. However, this differs in the case of the singly-linked list, which has the possibility of being O(1) if the enqueue() implementation is like insertAtBeginning(), or O(n) if the enqueue() implementation is like insertAtEnd(). Furthermore, this improves even more with the deque, which through having trailing ends at both the prev and next ends of the doubly linked list, has O(1) with its anagalous implementation of enqueue() because it can just (essentially) index into the end or beginning without "knowing" how many there are.
+
+Which Double-Ended Queue operation and Singly-Linked List operation perform the same task as the Queue dequeue() operation?
+
+So, as for the singly linked list as it currently is, there is no real way to 'return' the value that is dequeued, I mean, it certainly is easy to 'drop' the end or beginning with removeFirstNode() or removeLastNode(), but unless an upgrade to the search() operation is made no return is possible. However, for the deque, just with some function composition of getFront() and deleteFront(), or getRear() and deleteRear() respectively (depending on the coder's implementation of dequeue()) the anagalous function is possible. 
+
+What is the Big-O time complexity of the Queue dequeue() operation? Of its analogous Double-Ended Queue and Singly-Linked List operations?
+
+The big-O time complexity of the Queue dequeue() operation is O(1) due to it having ~> 15 operations, but because that doesn't change with the size of the queue there shouldn't be any problems as n gets really large (in reality the queue is held in memory so you dont want the queue to get large). This does change with the singly linked list, where removeFirstNode() does have the same time complexity, O(1), bit if the implementation is more like removeLastNode() then the time complexity baloons to O(n) due to iterating to the end of the list. Of course, it is a problematic comparison because the function isn't doing half of its job, returning the value it dequeued, and if that was implemented it could vary between O(n) and O(2n) depending on how its implemented. As for the double ended queue (or deque), the composition of either the combination of getFront() and deleteFront() or the combination of getRear() and deleteRear() end up turning out to have a constant number of operations, so that's O(1)! But the caveat remains that loading a large deque into memory is not advised, because it has to be loaded in all at once. 
+
+Between the Queue and Double-Ended Queue implementations, which one do you think takes up more space in memory? Why?
+
+Deques take up more space in memory. Consider the simplest model of a Deque, which is in fact a dynamically resizing double reflection of a queue, where while the data isnt copied and reflected, the index positions effectively are. Therefore there are more attributes attributed to each individual sliver of data compared to a normal queue, and scaled up in memory without consideration or limit would certainly hinder performance.

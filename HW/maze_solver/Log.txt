@@ -5,6 +5,18 @@
 =========================
 
 List of lines read from the file: 
-[2, 3, 1, 1, 0, 2, __7, *_7]
-2d Array of Maze with Start and Finish added: 
-[[null, null, F], [null, S, null]]
+[2, 3, 1, 1, 0, 2, __7, *_7] 
+
+UnRendered 2D Maze: 
+[[Cell(topWall=true, rightWall=false, leftWall=true, downWall=false, isStart=false, isFinish=false), Cell(topWall=true, rightWall=false, leftWall=false, downWall=true, isStart=false, isFinish=false), Cell(topWall=true, rightWall=true, leftWall=false, downWall=true, isStart=false, isFinish=true)], [Cell(topWall=false, rightWall=false, leftWall=true, downWall=true, isStart=false, isFinish=false), Cell(topWall=true, rightWall=false, leftWall=false, downWall=true, isStart=true, isFinish=false), Cell(topWall=true, rightWall=true, leftWall=false, downWall=true, isStart=false, isFinish=false)]]
+Rendered 2D Maze: 
++-----+-----+-----+
+|                 |
+|  .     .     F  |
+|                 |
++     +-----+-----+
+|                 |
+|  .     S     .  |
+|                 |
++-----+-----+-----+
+

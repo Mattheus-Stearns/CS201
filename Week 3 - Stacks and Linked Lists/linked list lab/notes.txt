@@ -1,0 +1,2 @@
+O(1) will be the time complexity of insertAtBeginning() because it doesnt have to iterate over every element
+Whereas insertAtEnd() will have the time complexity of O(n) because it has to iterate over every element present in the linked list

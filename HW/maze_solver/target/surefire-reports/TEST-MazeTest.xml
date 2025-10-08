@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MazeTest" time="0.068" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MazeTest" time="0.063" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire/surefirebooter-20251001202712462_3.jar /Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire 2025-10-01T20-27-12_406-jvmRun1 surefire-20251001202712462_1tmp surefire_0-20251001202712462_2tmp"/>
+    <property name="sun.java.command" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire/surefirebooter-20251002172422991_3.jar /Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire 2025-10-02T17-24-22_820-jvmRun1 surefire-20251002172422991_1tmp surefire_0-20251002172422991_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/test-classes:/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/classes:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/2.2.0/kotlin-stdlib-2.2.0.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-test/2.2.0/kotlin-test-2.2.0.jar:/Users/mattheuspieterstearns/.m2/repository/org/jetbrains/kotlin/kotlin-test-junit/2.2.0/kotlin-test-junit-2.2.0.jar:/Users/mattheuspieterstearns/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mattheuspieterstearns/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire/surefirebooter-20251001202712462_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mattheuspieterstearns/Desktop/Carleton/Computer Science/CS201/HW/maze_solver/target/surefire/surefirebooter-20251002172422991_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testUnsolvable" classname="MazeTest" time="0.019">
+  <testcase name="testUnsolvable" classname="MazeTest" time="0.017">
     <system-out><![CDATA[Test unsolvable
 +-----+-----+-----+
 |                 |
@@ -72,78 +72,82 @@
 +-----+-----+-----+
 ]]></system-out>
   </testcase>
-  <testcase name="test0" classname="MazeTest" time="0.002">
+  <testcase name="test0" classname="MazeTest" time="0.001">
     <system-out><![CDATA[Test 0
+[MazeSquare(row=1, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=0, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true)]
 +-----+-----+-----+
 |                 |
-|              F  |
+|  *     *     F  |
 |                 |
 +     +-----+-----+
 |                 |
-|        S        |
+|  *     S        |
 |                 |
 +-----+-----+-----+
 ]]></system-out>
   </testcase>
-  <testcase name="test2" classname="MazeTest" time="0.002">
+  <testcase name="test2" classname="MazeTest" time="0.003">
     <system-out><![CDATA[Test 2
+[MazeSquare(row=3, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=2, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=1, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=0, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true)]
 +-----+-----+-----+-----+
 |                       |
-|                    F  |
+|  *     *     *     F  |
 |                       |
 +     +-----+-----+-----+
 |                       |
-|                       |
+|  *     *              |
 |                       |
 +-----+     +-----+-----+
 |                       |
-|                       |
+|        *     *        |
 |                       |
 +-----+-----+     +-----+
 |                       |
-|  S                    |
+|  S     *     *        |
 |                       |
 +-----+-----+-----+-----+
 ]]></system-out>
   </testcase>
-  <testcase name="test3" classname="MazeTest" time="0.003">
+  <testcase name="test3" classname="MazeTest" time="0.002">
     <system-out><![CDATA[Test 3
+[MazeSquare(row=3, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=2, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=1, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=0, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true)]
 +-----+-----+-----+-----+
 |                       |
-|                    F  |
+|  *     *     *     F  |
 |                       |
 +     +-----+-----+-----+
 |                       |
-|                       |
+|  *     *              |
 |                       |
 +-----+     +-----+-----+
 |                       |
-|                       |
+|        *     *        |
 |                       |
 +-----+-----+     +-----+
 |                       |
-|  S                    |
+|  S     *     *        |
 |                       |
 +-----+-----+-----+-----+
 ]]></system-out>
   </testcase>
-  <testcase name="test4" classname="MazeTest" time="0.003">
+  <testcase name="test4" classname="MazeTest" time="0.004">
     <system-out><![CDATA[Test 4
+[MazeSquare(row=0, col=3, hasTopWall=true, hasRightWall=true, visited=true, solutionPiece=true), MazeSquare(row=0, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=0, col=0, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=0, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=1, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=1, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=2, col=2, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=2, hasTopWall=false, hasRightWall=false, visited=true, solutionPiece=true), MazeSquare(row=3, col=1, hasTopWall=true, hasRightWall=false, visited=true, solutionPiece=true)]
 +-----+-----+-----+-----+
 |                       |
-|                    S  |
+|  *     *     *     S  |
 |                       |
 +     +-----+-----+-----+
 |                       |
-|                       |
+|  *     *              |
 |                       |
 +-----+     +-----+-----+
 |                       |
-|                       |
+|        *     *        |
 |                       |
 +-----+-----+     +-----+
 |                       |
-|  F                    |
+|  F     *     *        |
 |                       |
 +-----+-----+-----+-----+
 ]]></system-out>

@@ -1,0 +1,20 @@
+Queue Implementation:
+
+	  0	   1 	   2      3	  4	  5   
+	"Jesse" "Natasha" "Jo" "Leona" "Patrick"
+	  ^				  ^
+	Front				 Rear
+
+After dequeue() gets called;
+
+	  0	   1 	   2      3	  4	  5   
+	"Jesse" "Natasha" "Jo" "Leona" "Patrick"
+	  	   ^		  	  ^
+		 Front			 Rear
+
+After enqueue("Nick") gets called;
+
+ 	  0	   1 	   2      3	  4	  5   
+	"Jesse"	"Natasha" "Jo" "Leona" "Patrick" "Nick"
+		   ^			  	   ^
+		 Front				  Rear
