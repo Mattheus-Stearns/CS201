@@ -1,0 +1,53 @@
+Trie Tree
+
+		Root
+	|	|	|
+	b	m	d
+	|	|	|
+	a	e	a
+	^	^	|
+       n  d   null t	t
+       |  |	   |	|
+     null null	  null	a
+			|
+			null
+
+Trie Tree after deleting "me"
+
+		Root
+	|	|	|
+	b	m	d
+	|	|	|
+	a	e	a
+	^	|	|
+       n  d     t	t
+       |  |	|	|
+     null null null	a
+			|
+			null
+
+Trie Tree after deleting "ban"
+
+		Root
+	|	|	|
+	b	m	d
+	|	|	|
+	a	e	a
+	|	|	|
+        d      	t	t
+        |	|	|
+      null     null	a
+			|
+			null
+
+Trie Tree after deleting "data"
+
+		Root
+	|	|
+	b	m
+	|	|
+	a	e
+	|	|
+        d      	t
+        |	|
+      null     null

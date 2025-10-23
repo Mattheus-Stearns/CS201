@@ -1,0 +1,19 @@
+Given this tree:
+	2
+	^
+      11  17
+      ^
+     5  25
+
+
+What is the result of an inorder traversal?
+
+5, 11, 25, 2, 17
+
+What is the result of a preorder traversal?
+
+2, 11, 5, 25, 17
+
+What is the result of a postorder traversal?
+
+5, 25, 11, 17, 2

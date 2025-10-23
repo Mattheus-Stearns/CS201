@@ -1,0 +1,36 @@
+Binary Search Trees (BSTs)
+
+Which of the following binary trees are valid binary search trees? Why?
+	A	B	C
+	3	8	14
+	^       ^      	 ^
+       2      6  10	9  21
+       ^      ^   ^	^    ^
+      1      5 7 9 11  2 11 12
+
+A, B and C are valid BSTs because each value has two children, and the left child has a smaller value than the parent node, and the right child has a higher value than the root node.
+
+Given the following BST, what will it look like after trying to insert 42?
+
+     49
+      ^
+   24    62
+   ^      ^
+  9 31   54 73
+
+
+     49
+      ^
+   24    62
+   ^      ^
+  9 31   54 73
+	 ^
+	42
+
+What will the same BST look like after trying to delete 49?
+
+     54
+      ^
+   24    62
+   ^      ^
+  9 31     73
